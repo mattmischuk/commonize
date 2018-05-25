@@ -1,0 +1,31 @@
+{
+  "name": "commonize",
+  "version": "1.0.0",
+  "description": "An opinionated add-on for normalize.css",
+  "main": "commonize.css",
+  "style": "commonize.css",
+  "files": ["LICENSE.md", "commonize.css"],
+  "author": "Matt Mischuk <m.mischuk@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "stylelint": "^9.2.1",
+    "stylelint-config-standard": "^18.2.0"
+  },
+  "scripts": {
+    "test": "stylelint commonize.css"
+  },
+  "repository": "https://github.com/mattmischuk/commonize",
+  "bugs": "https://github.com/mattmischuk/commonize/issues",
+  "stylelint": {
+    "extends": "stylelint-config-standard",
+    "rules": {
+      "font-family-no-duplicate-names": [
+        true,
+        {
+          "ignoreFontFamilyNames": ["monospace"]
+        }
+      ]
+    }
+  }
+}
